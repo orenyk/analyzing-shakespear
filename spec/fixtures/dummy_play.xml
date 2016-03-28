@@ -1,0 +1,41 @@
+<PLAY>
+  <TITLE>dummy title</TITLE>
+  <FM>
+    <P>dummy front matter</P>
+  </FM>
+  <PERSONAE>
+    <TITLE>Dramatis Personae</TITLE>
+    <PERSONA>Player 1</PERSONA>
+    <PGROUP>
+      <PERSONA>Player 2</PERSONA>
+      <GRPDESCR>his son.</GRPDESCR>
+    </PGROUP>
+  </PERSONAE>
+  <SCNDESCR>SCENE Location</SCNDESCR>
+  <PLAYSUBT>subtitle</PLAYSUBT>
+  <ACT>
+    <TITLE>ACT I</TITLE>
+    <SCENE>
+      <TITLE>SCENE I.</TITLE>
+      <STAGEDIR>Some stuff here</STAGEDIR>
+      <SPEECH>
+        <SPEAKER>Player 1</SPEAKER>
+        <LINE>Here is my line</LINE>
+      </SPEECH>
+      <SPEECH>
+        <SPEAKER>Player 2</SPEAKER>
+        <LINE>This is my first line.</LINE>
+        <LINE>This is my second line.</LINE>
+      </SPEECH>
+    </SCENE>
+    <SCENE>
+      <TITLE>SCENE II.</TITLE>
+      <STAGEDIR>Another direction</STAGEDIR>
+      <SPEECH>
+        <SPEAKER>ALL</SPEAKER>
+        <LINE>We should ignore this line</LINE>
+      </SPEECH>
+    </SCENE>
+  </ACT>
+</PLAY>
+
