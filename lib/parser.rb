@@ -1,7 +1,7 @@
 require "nokogiri"
 
 class Parser
-  def initialize(play)
+  def initialize(play:)
     @play = play
   end
 

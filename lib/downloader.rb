@@ -1,3 +1,5 @@
+require "net/http"
+
 class Downloader
   BASE_URL = "http://www.ibiblio.org/xml/examples/shakespeare/*.xml"
 
