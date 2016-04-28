@@ -10,8 +10,8 @@ class Parser
     xml.xpath("//SPEECH").each_with_object({}) do |speech, output|
       speaker = speech.css("SPEAKER/text()").to_s
       next if speaker == "ALL"
-      output[speaker] ||= []
-      speech.css("LINE").map { |l| output[speaker] << l.text }
+      output[speaker.downcase] ||= []
+      speech.css("LINE").map { |l| output[speaker.downcase] << l.text }
     end
   end
 end
