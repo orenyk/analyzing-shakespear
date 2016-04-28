@@ -1,10 +1,11 @@
 require "spec_helper.rb"
-require "./lib/macbeth_analyzer.rb"
+require "macbeth_analyzer.rb"
 
 RSpec.describe MacbethAnalyzer do
-  context "DEFAULT_SOURCE" do
-    it "is equal to the ibiblio URL" do
-      expect(MacbethAnalyzer::DEFAULT_SOURCE).to \
+  context "#initialize" do
+    it "defaults source to the ibiblio.org URL" do
+      m = MacbethAnalyzer.new
+      expect(m.source).to \
         eq("http://www.ibiblio.org/xml/examples/shakespeare/macbeth.xml")
     end
   end
@@ -16,7 +17,7 @@ RSpec.describe MacbethAnalyzer do
       m = MacbethAnalyzer.new(@dummy_play)
       out = m.run
 
-      expect(out["Player 1"]).to eq(2)
+      expect(out["Player 1"]).to eq(1)
       expect(out["Player 2"]).to eq(2)
     end
 

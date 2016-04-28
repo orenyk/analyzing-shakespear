@@ -35,10 +35,6 @@
         <SPEAKER>ALL</SPEAKER>
         <LINE>We should ignore this line</LINE>
       </SPEECH>
-      <SPEECH>
-        <SPEAKER>Player 1</SPEAKER>
-        <LINE>I'm back!</LINE>
-      </SPEECH>
     </SCENE>
   </ACT>
 </PLAY>
