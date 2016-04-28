@@ -5,6 +5,6 @@ class Printer
   end
 
   def print
-    @counts.each { |speaker, count| puts(@output, "#{speaker}\t#{count}") }
+    @counts.each { |speaker, count| @output.puts("#{speaker}\t#{count}") }
   end
 end
